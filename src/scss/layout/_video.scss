@@ -1,0 +1,66 @@
+@use "../base/variables" as v;
+@use "../base/mixins";
+
+.video {
+    position: relative;
+    height: 50rem;
+    @include mixins.media_query(1100px){
+        height: 70rem;
+    }
+    overflow: hidden;
+
+    .video__overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgb(14, 3, 203);
+        background: linear-gradient(
+            33deg,
+            rgba(14, 3, 203, 0.30314828568146013) 0%,
+            rgba(252, 0, 255, 0.4992267170540091) 100%
+        );
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    video {
+        width: auto;
+        @include mixins.media_query(1100px){
+            width: 100%;
+        }
+        display: block;
+    }
+}
+
+.video__overlay__text{
+    z-index: 100;
+    h2{
+        color: v.$blanco;
+        font-size: 3rem;
+        margin: 0;
+        @include mixins.media_query(350px){
+            font-size: 4rem;
+        }
+        @include mixins.media_query(500px){
+            font-size: 5rem;
+        }
+        @include mixins.media_query(700px){
+            font-size: 6rem;
+        }
+        @include mixins.media_query(1100px){
+            font-size: 7rem;
+        }
+    }
+    p{
+        display: inline-block;
+        background-color: v.$rosa;
+        padding: 1.5rem 2rem;
+        font-weight: 700;
+        color: v.$blanco;
+        border-radius: 5px;
+        @include mixins.media_query(1100px){
+            padding: 1.5rem 5rem;
+        }
+    }
+}

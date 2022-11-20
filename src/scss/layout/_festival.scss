@@ -1,0 +1,37 @@
+@use '../base/variables' as v;
+@use '../base/mixins';
+
+.festival{
+    display: grid;
+    padding: 5rem 0;
+    gap: 4rem;
+    @include mixins.media_query(1100px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.festival__contenido{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    h2{
+        margin-bottom: 0;
+    }
+    .festival__contenido__fecha{
+        border-radius: 5px;
+        color: v.$blanco;
+        font-weight: 700;
+        text-align: center;
+        background-color: v.$rosa;
+        text-align: center;
+        padding: 1rem 0.5rem;
+    }
+    @include mixins.media_query(1100px){
+        text-align: left;
+        .festival__contenido__fecha{
+            text-align: center;
+        }
+    }
+}

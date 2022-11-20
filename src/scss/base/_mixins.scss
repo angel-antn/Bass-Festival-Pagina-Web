@@ -1,0 +1,11 @@
+@mixin media_query ($px){
+    @media(min-width: $px){
+        @content;
+    }
+}
+
+@mixin reset_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

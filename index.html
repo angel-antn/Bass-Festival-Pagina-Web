@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bass Festival</title>
+        <link rel="icon" href="logo.png">
+        <meta name="description" content="Proyecto con Gulp, SASS y HTML">
+        <link
+            rel="preload"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap"
+            crossorigin="crossorigin"
+            as="font"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preload" href="build/css/style.css" as="style" />
+        <link rel="stylesheet" href="build/css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__contenido contenedor">
+                <h1>Bass Festival</h1>
+                <nav class="header__nav">
+                    <a class="header__nav__enlace" href="#lineup">Line Up</a>
+                    <a class="header__nav__enlace" href="#galeria">Galeria</a>
+                    <a class="header__nav__enlace" href="#boletos">Boletos</a>
+                </nav>
+            </div>
+        </header>
+        <div class="video">
+            <div class="video__overlay">
+                <div class="video__overlay__text contenedor">
+                    <h2>Dubstep & Bass House Festival</h2>
+                    <p>Noviembre 2022, Anzoategui, Venezuela.</p>
+                </div>
+            </div>
+            <video autoplay loop muted>
+                <source src="video/rave.mp4" type="video/mp4" />
+                <source src="video/rave.webm" type="video/webm" />
+            </video>
+        </div>
+        <section class="festival contenedor">
+            <div class="festival__img">
+                <picture>
+                    <source srcset="build/img/imagen_skrillex.avif" type="image/avif" />
+                    <source srcset="build/img/imagen_skrillex.webp" type="image/webp" />
+                    <img width="200" height="300" src="build/img/imagen_skrillex.jpg" alt="Skrillex at stage" loading="lazy" />
+                </picture>
+                
+            </div>
+            <div class="festival__contenido">
+                <h2>Dubstep & Bass House Festival</h2>
+                <p class="festival__contenido__fecha">Noviembre 2022, Anzoategui, Venezuela.</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsam totam fuga culpa illum facilis nemo error tenetur illo
+                    consectetur. Dicta sed odio quis asperiores architecto
+                    laboriosam rerum in a illum.
+                </p>
+            </div>
+        </section>
+        <img src="/build/img/svg/wave.svg" alt="wave">
+        <section class="lineup" id="lineup">
+            <h2>Line Up</h2>
+            <p class="lineup__dia">Viernes 25</p>
+            <div class="lineup__contenedor contenedor">
+                <div class="lineup__contenedor__escenario lineup__contenedor__escenario-amarillo">
+                    <p class="lineup__contenedor__escenario__nombre">Escenario Dubstep</p>
+                    <picture>
+                        <source srcset="/build//img/logo_knife_party.avif" type="image/avif" />
+                        <source srcset="/build//img/logo_knife_party.webp" type="image/webp" />
+                        <img width="200" height="300" src="/build//img/logo_knife_party.png" alt="knife party" loading="lazy" />
+                    </picture>
+                    <ul class="lineup__contenedor__escenario__calendario">
+                        <li>12:00am - <span>Knife Party</span></li>
+                        <li>10:00pm - <span>Barely Alive</span></li>
+                        <li>08:00pm - <span>Eptic</span></li>
+                        <li>07:00pm - <span>Fox Stevenson</span></li>
+                    </ul>
+                </div>
+                <div class="lineup__contenedor__escenario">
+                    <p class="lineup__contenedor__escenario__nombre">Escenario Bass House</p>
+                    <picture>
+                        <source srcset="/build/img/logo_jauz.avif" type="image/avif" />
+                        <source srcset="/build/img/logo_jauz.webp" type="image/webp" />
+                        <img width="200" height="300" src="/build/img/logo_jauz.png" alt="jauz" loading="lazy" />
+                    </picture>
+                    <ul class="lineup__contenedor__escenario__calendario">
+                        <li>12:00am - <span>Jauz</span></li>
+                        <li>10:00pm - <span>Valentino Khan</span></li>
+                        <li>08:00pm - <span>JOYRIDE</span></li>
+                        <li>07:00pm - <span>Habstrakt</span></li>
+                        <li>06:00pm - <span>Tokio Machine</span></li>
+                        <li>05:00pm - <span>BROSIK</span></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="lineup__dia">Sabado 26</p>
+            <div class="lineup__contenedor contenedor">
+                <div class="lineup__contenedor__escenario">
+                    <p class="lineup__contenedor__escenario__nombre">Escenario Dubstep</p>
+                    <picture>
+                        <source srcset="/build/img/logo_skrillex.avif" type="image/avif" />
+                        <source srcset="/build/img/logo_skrillex.webp" type="image/webp" />
+                        <img width="200" height="300" src="/build/img/logo_skrillex.png" alt="skrillex" loading="lazy" />
+                    </picture>
+                    <ul class="lineup__contenedor__escenario__calendario">
+                        <li>12:00am - <span>Skrillex</span></li>
+                        <li>10:00pm - <span>Excision</span></li>
+                        <li>08:00pm - <span>Zomboy</span></li>
+                        <li>07:00pm - <span>Dr Ozi</span></li>
+                        <li>06:00pm - <span>Snails</span></li>
+                        <li>05:00pm - <span>Ace Aura</span></li>
+                    </ul>
+                </div>
+                <div class="lineup__contenedor__escenario lineup__contenedor__escenario-amarillo">
+                    <p class="lineup__contenedor__escenario__nombre">Escenario Bass House</p>
+                    <picture>
+                        <source srcset="/build/img/logo_Tchami.avif" type="image/avif" />
+                        <source srcset="/build/img/logo_Tchami.webp" type="image/webp" />
+                        <img width="200" height="300" src="/build/img/logo_Tchami.png" alt="tchami" loading="lazy" />
+                    </picture>
+                    <ul class="lineup__contenedor__escenario__calendario">
+                        <li>12:00am - <span>Tchami</span></li>
+                        <li>10:00pm - <span>Matroda</span></li>
+                        <li>08:00pm - <span>RageMode</span></li>
+                        <li>07:00pm - <span>Curbi</span></li>
+                    </ul>
+                </div>
+            </div>
+            <img src="build/img/svg/white_wave.svg" alt="white_wave">
+        </section>
+        <section class="galeria contenedor" id="galeria">
+            <h2>Galeria</h2>
+            <ul class="galeria__imagenes"></ul>
+        </section>
+
+        <img src="build/img/svg/purple_wave.svg" alt="wave">
+        <section class="boletos" id="boletos">
+            <h2>Boletos</h2>
+            <div class="contenedor boletos__info">
+                <div class="boletos__info__basico boletos__info__carta">
+                    <h3 class="boletos__info__carta__nombre">Pase de 1 dia</h3>
+                    <header class="boletos__info__carta__header">
+                        <p>Incluye</p>
+                    </header>
+                    <div class="boletos__info__carta__body">
+                        <ul>
+                            <li>Acceso a ambos escenarios</li>
+                            <li>Comida y bebida</li>
+                        </ul>
+                    </div>
+                    <footer class="boletos__info__carta__footer">
+                        <p>$50</p>
+                    </footer>
+                </div>
+
+                <div class="boletos__info__premium boletos__info__carta">
+                    <h3 class="boletos__info__carta__nombre">Pase de 2 dias</h3>
+                    <header class="boletos__info__carta__header">
+                        <p>Incluye</p>
+                    </header>
+                    <div class="boletos__info__carta__body">
+                        <ul>
+                            <li>Acceso a ambos escenarios</li>
+                            <li>Comida y bebida</li>
+                            <li>Camisa del evento</li>
+                            <li>Acceso VIP</li>
+                        </ul>
+                    </div>
+                    <footer class="boletos__info__carta__footer">
+                        <p>$90</p>
+                    </footer>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>Dubstep & Bass House Festival 2022. Todos los derechos reservados</p>
+        </footer>
+        <script src="build/js/script.js"></script>
+    </body>
+</html>

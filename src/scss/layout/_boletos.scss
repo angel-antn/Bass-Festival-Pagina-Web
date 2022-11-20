@@ -1,0 +1,75 @@
+@use '../base/variables' as v;
+@use '../base/mixins';
+
+.boletos{
+    background-color: v.$morado;
+    padding-bottom: 5rem;
+    h2{
+        color: v.$blanco;
+        text-align: center;
+    }
+    @include mixins.media_query(1100px){
+        margin-top: -12rem;
+        
+    }
+}
+
+.boletos__info{
+    @include mixins.media_query(1100px){
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
+
+    &__carta{
+        padding-bottom: 5rem;
+    }
+
+    &__carta__nombre{
+        text-align: center;
+        color: v.$blanco;
+    }
+
+    &__carta__header,
+    &__carta__footer{
+        p{
+            margin: 0;
+            text-align: center;
+            color: v.$blanco;
+            padding: 1rem;
+            font-weight: 700;
+        }
+    }
+
+    &__carta__header{
+        background-color: v.$rosa;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        p{
+            text-transform: uppercase;
+        }
+    }
+    &__carta__body{
+        background-color: v.$blanco;
+        ul{
+            @include mixins.reset_list;
+            li{
+                padding: 2rem;
+                border-bottom: 1px solid v.$gris;
+                &:last-child{
+                    border: none;
+                }
+
+            }
+        }
+    }
+    &__carta__footer{
+        background-color: v.$amarillo;
+        p{
+            font-size: 3rem;
+        }
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
+
